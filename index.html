@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="page-content page-container" id="page-content">
+      <div class="padding">
+        <div
+          class="row container d-flex justify-content-center ml-auto mr-auto"
+        >
+          <div class="col-md-7">
+            <div class="box box-warning direct-chat direct-chat-warning">
+              <div class="box-header with-border">
+                <h3 class="box-title">Toxic Chat</h3>
+                <div class="box-tools pull-right">
+                  <i class="fa fa-minus"></i>
+                </div>
+              </div>
+
+              <div class="box-body">
+                <div class="direct-chat-messages" id="messages">
+                  <div class="direct-chat-msg">
+                    <div class="direct-chat-info clearfix">
+                      <span class="direct-chat-name pull-left">Toxic bot</span>
+                    </div>
+
+                    <img
+                      class="direct-chat-img"
+                      src="https://static.thenounproject.com/png/415514-200.png"
+                      alt="message user image"
+                    />
+
+                    <div class="direct-chat-text">
+                      What the fuck is your name?
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="box-footer">
+                <div class="input-group">
+                  <input
+                    type="text"
+                    name="message"
+                    placeholder="Type Message ..."
+                    class="form-control"
+                    id="messageInput"
+                  />
+                  <span class="input-group-btn">
+                    <button
+                      type="button"
+                      class="btn btn-warning btn-flat"
+                      id="send"
+                    >
+                      Send
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/toxicChat.js"></script>
+  </body>
+</html>
